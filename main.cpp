@@ -13,7 +13,6 @@ int main(int argc, char * argv[])
 
     std::cout << (int)hammingDistance(0xFF, 0x11) << std::endl;
 
-    return 0;
 }
 
 uint8_t hammingDistance(uint8_t n1, uint8_t n2)
@@ -26,4 +25,3 @@ uint8_t hammingDistance(uint8_t n1, uint8_t n2)
         x >>= 1;
     }
     return setBits;
-}

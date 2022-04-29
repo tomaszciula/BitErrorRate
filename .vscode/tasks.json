@@ -1,5 +1,6 @@
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     // See https://go.microsoft.com/fwlink/?LinkId=733558
     // for the documentation about the tasks.json format
     "version": "2.0.0",
@@ -28,6 +29,8 @@
     ]
   }
 =======
+=======
+>>>>>>> 5598deb91f96393b1838ba9daaee06af34ecab0c
     "tasks": [
         {
             "type": "cppbuild",
@@ -54,5 +57,9 @@
         }
     ],
     "version": "2.0.0"
+<<<<<<< HEAD
+}
+>>>>>>> 5598deb91f96393b1838ba9daaee06af34ecab0c
+=======
 }
 >>>>>>> 5598deb91f96393b1838ba9daaee06af34ecab0c

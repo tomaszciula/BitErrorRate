@@ -11,7 +11,7 @@ int main(int argc, char * argv[])
         std::cout << "argv[" << iter << "] =" << argv[iter] << std::endl;
     }
 
-    std::cout << (int)hammingDistance(0xFF, 0x01) << std::endl;
+    std::cout << (int)hammingDistance(0xFF, 0x11) << std::endl;
 
     return 0;
 }

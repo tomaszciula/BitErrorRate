@@ -29,11 +29,11 @@ int main(int argc, char *argv[])
     createFile1("test2_file2.bin", 100, 0x55);
 
     // TODO: Test 3
-    createFile1("test3_file1.bin", 400000000, 0x55);
-    createFile1("test3_file2.bin", 400000000, 0x50);
+    // createFile1("test3_file1.bin", 400000000, 0x55);
+    // createFile1("test3_file2.bin", 400000000, 0x50);
 
     char buffer1[100], buffer2[100];
-    float count = 0.0;
+    double count = 0.0;
     std::string s = argv[1];
     int pos = s.find("_");
     std::cout << "substring: " << s.substr(0, pos) << std::endl;
@@ -48,7 +48,6 @@ int main(int argc, char *argv[])
             saveLog("Test 1 plik 1 błąd otwarcia pliku");
             closeLog();
         }
-        test_file1.close();
         std::ifstream test_file2("test1_file2.bin", std::ios::in | std::ios::binary);
         test_file2.read(buffer2, 100);
         if (!test_file2)
@@ -57,13 +56,15 @@ int main(int argc, char *argv[])
             saveLog("Test 1 plik 2 błąd otwarcia pliku");
             closeLog();
         }
-        test_file2.close();
+        openLog("log.txt");
+        saveLog("Test 1 rozpoczęto");
+
         for (size_t i = 0; i < 100; i++)
         {
             count += hammingDistance(buffer1[i], buffer2[i]);
         }
-        std::string test1 = "Test 1 - BER = " + std::to_string(count / static_cast<float>(100 * 8));
-        openLog("log.txt");
+        saveLog("Test 1 zakończono");
+        std::string test1 = "Test 1 - BER = " + std::to_string(count / (100.0 * 8.0));
         saveLog(test1);
         closeLog();
     }
@@ -79,7 +80,6 @@ int main(int argc, char *argv[])
             saveLog("Test 2 plik 1 błąd otwarcia pliku");
             closeLog();
         }
-        test_file1.close();
         std::ifstream test_file2("test2_file2.bin", std::ios::in | std::ios::binary);
         test_file2.read(buffer2, 100);
         if (!test_file2)
@@ -88,51 +88,56 @@ int main(int argc, char *argv[])
             saveLog("Test 2 plik 2 błąd otwarcia pliku");
             closeLog();
         }
-        test_file2.close();
         // Changing 10 bits
         for (size_t i = 50; i < 55; i++)
         {
             buffer2[i] = 0x77;
         }
+        openLog("log.txt");
+        saveLog("Test 2 rozpoczęto");
         for (size_t i = 0; i < 100; i++)
         {
             count += hammingDistance(buffer1[i], buffer2[i]);
         }
-        std::string test1 = "Test 2 - BER = " + std::to_string(count / static_cast<float>(100 * 8));
-        openLog("log.txt");
-        saveLog(test1);
+        saveLog("Test 2 zakończono");
+        std::string test2 = "Test 2 - BER = " + std::to_string(count / (100.0 * 8.0));
+        saveLog(test2);
         closeLog();
     }
 
     else
 
     {
-        char test3_buffer1[400000000], test3_buffer2[4000000];
+        count = 0.0;
         std::ifstream test_file1("test3_file1.bin", std::ios::in | std::ios::binary);
-        test_file1.read(test3_buffer1, 4000);
         if (!test_file1)
         {
             openLog("log.txt");
             saveLog("Test 3 plik 1 błąd otwarcia pliku");
             closeLog();
         }
-        test_file1.close();
         std::ifstream test_file2("test3_file2.bin", std::ios::in | std::ios::binary);
-        test_file2.read(test3_buffer2, 40000);
         if (!test_file2)
         {
             openLog("log.txt");
             saveLog("Test 3 plik 2 błąd otwarcia pliku");
             closeLog();
         }
-        test_file2.close();
-        for (size_t i = 0; i < 4000; i++)
-        {
-            count += hammingDistance(test3_buffer1[i], test3_buffer2[i]);
-        }
-        std::string test1 = "Test 3 - BER = " + std::to_string(count / static_cast<float>(100 * 8));
+        char test3_buffer1[1], test3_buffer2[1];
         openLog("log.txt");
-        saveLog(test1);
+        saveLog("Test 3 rozpoczęto");
+        int licznik = 0;
+        while (!test_file1.eof())
+        {
+
+            test_file1.read(test3_buffer1, 1);
+            test_file2.read(test3_buffer2, 1);
+            count += hammingDistance(test3_buffer1[0], test3_buffer2[0]);
+        }
+        std::cout << count << std::endl;
+        saveLog("Test 3 zakończono");
+        std::string test3 = "Test 3 - BER = " + std::to_string(count / (400000000.0 * 8.0));
+        saveLog(test3);
         closeLog();
     }
 }

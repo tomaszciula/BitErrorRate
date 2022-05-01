@@ -35,6 +35,9 @@ int main(int argc, char *argv[])
     char buffer1[100], buffer2[100];
     double count = 0.0;
     std::string s = argv[1];
+
+    // Wystarczy podać jako argument nazwę pliku do znaku "_", przykładowo "test2_"
+
     int pos = s.find("_");
     std::cout << "substring: " << s.substr(0, pos) << std::endl;
 
@@ -66,6 +69,8 @@ int main(int argc, char *argv[])
         saveLog("Test 1 zakończono");
         std::string test1 = "Test 1 - BER = " + std::to_string(count / (100.0 * 8.0));
         saveLog(test1);
+        saveLog("Ilość porownanych bitow: 800");
+        saveLog("Ilość błędnych bitow: " + std::to_string(count));
         closeLog();
     }
 
@@ -100,8 +105,10 @@ int main(int argc, char *argv[])
             count += hammingDistance(buffer1[i], buffer2[i]);
         }
         saveLog("Test 2 zakończono");
-        std::string test2 = "Test 2 - BER = " + std::to_string(count / (100.0 * 8.0));
+        std::string test2 = "Test 2 - BER = " + std::to_string((count / (100.0 * 8.0)));
         saveLog(test2);
+        saveLog("Ilość porownanych bitow: 800");
+        saveLog("Ilość błędnych bitow: " + std::to_string(count));
         closeLog();
     }
 
@@ -126,7 +133,6 @@ int main(int argc, char *argv[])
         char test3_buffer1[1], test3_buffer2[1];
         openLog("log.txt");
         saveLog("Test 3 rozpoczęto");
-        int licznik = 0;
         while (!test_file1.eof())
         {
 
@@ -134,10 +140,11 @@ int main(int argc, char *argv[])
             test_file2.read(test3_buffer2, 1);
             count += hammingDistance(test3_buffer1[0], test3_buffer2[0]);
         }
-        std::cout << count << std::endl;
         saveLog("Test 3 zakończono");
         std::string test3 = "Test 3 - BER = " + std::to_string(count / (400000000.0 * 8.0));
         saveLog(test3);
+        saveLog("Ilość porownanych bitow: " + std::to_string((400000000.0 * 8.0)));
+        saveLog("Ilość błędnych bitow: " + std::to_string(count));
         closeLog();
     }
 }

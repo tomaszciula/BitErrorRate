@@ -1,24 +1,30 @@
-T: Sun May  1 18:53:36 2022 M: Log file opened
-T: Sun May  1 18:53:36 2022 M: Program uruchomiono poprawnie
-T: Sun May  1 18:53:36 2022 M: Log file closed
-T: Sun May  1 18:53:36 2022 M: Log file opened
-T: Sun May  1 18:53:36 2022 M: Test 1 rozpoczęto
-T: Sun May  1 18:53:36 2022 M: Test 1 zakończono
-T: Sun May  1 18:53:36 2022 M: Test 1 - BER = 0.000000
-T: Sun May  1 18:53:36 2022 M: Log file closed
-T: Sun May  1 18:53:42 2022 M: Log file opened
-T: Sun May  1 18:53:42 2022 M: Program uruchomiono poprawnie
-T: Sun May  1 18:53:42 2022 M: Log file closed
-T: Sun May  1 18:53:42 2022 M: Log file opened
-T: Sun May  1 18:53:42 2022 M: Test 2 rozpoczęto
-T: Sun May  1 18:53:42 2022 M: Test 2 zakończono
-T: Sun May  1 18:53:42 2022 M: Test 2 - BER = 0.012500
-T: Sun May  1 18:53:42 2022 M: Log file closed
-T: Sun May  1 18:53:47 2022 M: Log file opened
-T: Sun May  1 18:53:47 2022 M: Program uruchomiono poprawnie
-T: Sun May  1 18:53:47 2022 M: Log file closed
-T: Sun May  1 18:53:47 2022 M: Log file opened
-T: Sun May  1 18:53:47 2022 M: Test 3 rozpoczęto
-T: Sun May  1 18:54:10 2022 M: Test 3 zakończono
-T: Sun May  1 18:54:10 2022 M: Test 3 - BER = 0.250000
-T: Sun May  1 18:54:10 2022 M: Log file closed
+T: Sun May  1 19:28:08 2022 M: Log file opened
+T: Sun May  1 19:28:08 2022 M: Program uruchomiono poprawnie
+T: Sun May  1 19:28:08 2022 M: Log file closed
+T: Sun May  1 19:28:08 2022 M: Log file opened
+T: Sun May  1 19:28:08 2022 M: Test 1 rozpoczęto
+T: Sun May  1 19:28:08 2022 M: Test 1 zakończono
+T: Sun May  1 19:28:08 2022 M: Test 1 - BER = 0.000000
+T: Sun May  1 19:28:08 2022 M: Ilość porownanych bitow: 800
+T: Sun May  1 19:28:08 2022 M: Ilość błędnych bitow: 0.000000
+T: Sun May  1 19:28:08 2022 M: Log file closed
+T: Sun May  1 19:28:22 2022 M: Log file opened
+T: Sun May  1 19:28:22 2022 M: Program uruchomiono poprawnie
+T: Sun May  1 19:28:22 2022 M: Log file closed
+T: Sun May  1 19:28:22 2022 M: Log file opened
+T: Sun May  1 19:28:22 2022 M: Test 2 rozpoczęto
+T: Sun May  1 19:28:22 2022 M: Test 2 zakończono
+T: Sun May  1 19:28:22 2022 M: Test 2 - BER = 0.012500
+T: Sun May  1 19:28:22 2022 M: Ilość porownanych bitow: 800
+T: Sun May  1 19:28:22 2022 M: Ilość błędnych bitow: 10.000000
+T: Sun May  1 19:28:22 2022 M: Log file closed
+T: Sun May  1 19:28:35 2022 M: Log file opened
+T: Sun May  1 19:28:35 2022 M: Program uruchomiono poprawnie
+T: Sun May  1 19:28:35 2022 M: Log file closed
+T: Sun May  1 19:28:35 2022 M: Log file opened
+T: Sun May  1 19:28:35 2022 M: Test 3 rozpoczęto
+T: Sun May  1 19:28:59 2022 M: Test 3 zakończono
+T: Sun May  1 19:28:59 2022 M: Test 3 - BER = 0.250000
+T: Sun May  1 19:28:59 2022 M: Ilość porownanych bitow: 3200000000.000000
+T: Sun May  1 19:28:59 2022 M: Ilość błędnych bitow: 800000002.000000
+T: Sun May  1 19:28:59 2022 M: Log file closed

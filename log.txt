@@ -1,42 +1,96 @@
-T: Fri Apr 29 16:04:43 2022 M: Log file opened
-T: Fri Apr 29 16:04:43 2022 M: Program uruchomiono poprawnie
-T: Fri Apr 29 16:04:43 2022 M: Log file closed
-T: Fri Apr 29 16:07:10 2022 M: Log file opened
-T: Fri Apr 29 16:07:10 2022 M: Program uruchomiono poprawnie
-T: Fri Apr 29 16:07:10 2022 M: Log file closed
-T: Fri Apr 29 16:07:27 2022 M: Log file opened
-T: Fri Apr 29 16:07:27 2022 M: Program uruchomiono poprawnie
-T: Fri Apr 29 16:07:27 2022 M: Log file closed
-T: Fri Apr 29 16:45:08 2022 M: Log file opened
-T: Fri Apr 29 16:45:08 2022 M: Program uruchomiono poprawnie
-T: Fri Apr 29 16:45:08 2022 M: Log file closed
-T: Fri Apr 29 16:48:55 2022 M: Log file opened
-T: Fri Apr 29 16:48:55 2022 M: Program uruchomiono poprawnie
-T: Fri Apr 29 16:48:55 2022 M: Log file closed
-T: Fri Apr 29 16:56:35 2022 M: Log file opened
-T: Fri Apr 29 16:56:35 2022 M: Program uruchomiono poprawnie
-T: Fri Apr 29 16:56:35 2022 M: Log file closed
-T: Fri Apr 29 16:57:13 2022 M: Log file opened
-T: Fri Apr 29 16:57:13 2022 M: Program uruchomiono poprawnie
-T: Fri Apr 29 16:57:13 2022 M: Log file closed
-T: Fri Apr 29 16:59:07 2022 M: Log file opened
-T: Fri Apr 29 16:59:07 2022 M: Program uruchomiono poprawnie
-T: Fri Apr 29 16:59:07 2022 M: Log file closed
-T: Fri Apr 29 16:59:43 2022 M: Log file opened
-T: Fri Apr 29 16:59:43 2022 M: Program uruchomiono poprawnie
-T: Fri Apr 29 16:59:43 2022 M: Log file closed
-T: Fri Apr 29 17:00:40 2022 M: Log file opened
-T: Fri Apr 29 17:00:40 2022 M: Program uruchomiono poprawnie
-T: Fri Apr 29 17:00:40 2022 M: Log file closed
-T: Fri Apr 29 17:00:57 2022 M: Log file opened
-T: Fri Apr 29 17:00:57 2022 M: Program uruchomiono poprawnie
-T: Fri Apr 29 17:00:57 2022 M: Log file closed
-T: Fri Apr 29 17:03:45 2022 M: Log file opened
-T: Fri Apr 29 17:03:45 2022 M: Program uruchomiono poprawnie
-T: Fri Apr 29 17:03:45 2022 M: Log file closed
-T: Fri Apr 29 17:18:21 2022 M: Log file opened
-T: Fri Apr 29 17:18:21 2022 M: Program uruchomiono poprawnie
-T: Fri Apr 29 17:18:21 2022 M: Log file closed
-T: Fri Apr 29 17:18:21 2022 M: Log file opened
-T: Fri Apr 29 17:18:21 2022 M: Test 1 - BER = 0
-T: Fri Apr 29 17:18:21 2022 M: Log file closed
+T: Fri Apr 29 17:36:19 2022 M: Log file opened
+T: Fri Apr 29 17:36:19 2022 M: Program uruchomiono poprawnie
+T: Fri Apr 29 17:36:19 2022 M: Log file closed
+T: Fri Apr 29 17:36:19 2022 M: Log file opened
+T: Fri Apr 29 17:36:19 2022 M: Test 1 - BER = 200
+T: Fri Apr 29 17:36:19 2022 M: Log file closed
+T: Sat Apr 30 09:16:50 2022 M: Log file opened
+T: Sat Apr 30 09:16:50 2022 M: Program uruchomiono poprawnie
+T: Sat Apr 30 09:16:50 2022 M: Log file closed
+T: Sat Apr 30 09:16:50 2022 M: Log file opened
+T: Sat Apr 30 09:16:50 2022 M: Test 1 - BER = 0.250000
+T: Sat Apr 30 09:16:50 2022 M: Log file closed
+T: Sat Apr 30 09:44:49 2022 M: Log file opened
+T: Sat Apr 30 09:44:49 2022 M: Program uruchomiono poprawnie
+T: Sat Apr 30 09:44:49 2022 M: Log file closed
+T: Sat Apr 30 09:45:48 2022 M: Log file opened
+T: Sat Apr 30 09:45:48 2022 M: Program uruchomiono poprawnie
+T: Sat Apr 30 09:45:48 2022 M: Log file closed
+T: Sat Apr 30 09:47:13 2022 M: Log file opened
+T: Sat Apr 30 09:47:13 2022 M: Program uruchomiono poprawnie
+T: Sat Apr 30 09:47:13 2022 M: Log file closed
+T: Sat Apr 30 09:52:19 2022 M: Log file opened
+T: Sat Apr 30 09:52:19 2022 M: Program uruchomiono poprawnie
+T: Sat Apr 30 09:52:19 2022 M: Log file closed
+T: Sat Apr 30 09:55:17 2022 M: Log file opened
+T: Sat Apr 30 09:55:17 2022 M: Program uruchomiono poprawnie
+T: Sat Apr 30 09:55:17 2022 M: Log file closed
+T: Sat Apr 30 09:55:37 2022 M: Log file opened
+T: Sat Apr 30 09:55:37 2022 M: Test 1 - BER = 0.250000
+T: Sat Apr 30 09:55:37 2022 M: Log file closed
+T: Sat Apr 30 09:58:21 2022 M: Log file opened
+T: Sat Apr 30 09:58:21 2022 M: Program uruchomiono poprawnie
+T: Sat Apr 30 09:58:21 2022 M: Log file closed
+T: Sat Apr 30 09:58:37 2022 M: Log file opened
+T: Sat Apr 30 09:58:37 2022 M: Test 1 - BER = 0.250000
+T: Sat Apr 30 09:58:37 2022 M: Log file closed
+T: Sat Apr 30 09:59:34 2022 M: Log file opened
+T: Sat Apr 30 09:59:34 2022 M: Program uruchomiono poprawnie
+T: Sat Apr 30 09:59:34 2022 M: Log file closed
+T: Sat Apr 30 09:59:50 2022 M: Log file opened
+T: Sat Apr 30 09:59:50 2022 M: Test 1 - BER = 0.250000
+T: Sat Apr 30 09:59:50 2022 M: Log file closed
+T: Sat Apr 30 10:01:45 2022 M: Log file opened
+T: Sat Apr 30 10:01:45 2022 M: Program uruchomiono poprawnie
+T: Sat Apr 30 10:01:45 2022 M: Log file closed
+T: Sat Apr 30 10:02:04 2022 M: Log file opened
+T: Sat Apr 30 10:02:04 2022 M: Test 1 - BER = 0.250000
+T: Sat Apr 30 10:02:04 2022 M: Log file closed
+T: Sat Apr 30 10:03:02 2022 M: Log file opened
+T: Sat Apr 30 10:03:02 2022 M: Program uruchomiono poprawnie
+T: Sat Apr 30 10:03:02 2022 M: Log file closed
+T: Sat Apr 30 10:03:25 2022 M: Log file opened
+T: Sat Apr 30 10:03:25 2022 M: Test 1 - BER = 0.250000
+T: Sat Apr 30 10:03:25 2022 M: Log file closed
+T: Sat Apr 30 10:04:52 2022 M: Log file opened
+T: Sat Apr 30 10:04:52 2022 M: Program uruchomiono poprawnie
+T: Sat Apr 30 10:04:52 2022 M: Log file closed
+T: Sat Apr 30 10:05:08 2022 M: Log file opened
+T: Sat Apr 30 10:05:08 2022 M: Test 1 - BER = 0.000000
+T: Sat Apr 30 10:05:08 2022 M: Log file closed
+T: Sat Apr 30 10:05:24 2022 M: Log file opened
+T: Sat Apr 30 10:05:24 2022 M: Program uruchomiono poprawnie
+T: Sat Apr 30 10:05:24 2022 M: Log file closed
+T: Sat Apr 30 10:05:40 2022 M: Log file opened
+T: Sat Apr 30 10:05:40 2022 M: Test 1 - BER = 0.000000
+T: Sat Apr 30 10:05:40 2022 M: Log file closed
+T: Sat Apr 30 10:14:45 2022 M: Log file opened
+T: Sat Apr 30 10:14:45 2022 M: Program uruchomiono poprawnie
+T: Sat Apr 30 10:14:45 2022 M: Log file closed
+T: Sat Apr 30 10:15:01 2022 M: Log file opened
+T: Sat Apr 30 10:15:01 2022 M: Test 2 - BER = 0.000000
+T: Sat Apr 30 10:15:01 2022 M: Log file closed
+T: Sat Apr 30 10:18:31 2022 M: Log file opened
+T: Sat Apr 30 10:18:31 2022 M: Program uruchomiono poprawnie
+T: Sat Apr 30 10:18:31 2022 M: Log file closed
+T: Sat Apr 30 10:18:48 2022 M: Log file opened
+T: Sat Apr 30 10:18:48 2022 M: Test 2 - BER = 0.012500
+T: Sat Apr 30 10:18:48 2022 M: Log file closed
+T: Sat Apr 30 10:19:31 2022 M: Log file opened
+T: Sat Apr 30 10:19:31 2022 M: Program uruchomiono poprawnie
+T: Sat Apr 30 10:19:31 2022 M: Log file closed
+T: Sat Apr 30 10:19:48 2022 M: Log file opened
+T: Sat Apr 30 10:19:48 2022 M: Test 1 - BER = 0.000000
+T: Sat Apr 30 10:19:48 2022 M: Log file closed
+T: Sat Apr 30 10:28:27 2022 M: Log file opened
+T: Sat Apr 30 10:28:27 2022 M: Program uruchomiono poprawnie
+T: Sat Apr 30 10:28:27 2022 M: Log file closed
+T: Sat Apr 30 10:28:43 2022 M: Log file opened
+T: Sat Apr 30 10:28:43 2022 M: Test 1 - BER = 10000.000000
+T: Sat Apr 30 10:28:43 2022 M: Log file closed
+T: Sat Apr 30 10:35:40 2022 M: Log file opened
+T: Sat Apr 30 10:35:40 2022 M: Program uruchomiono poprawnie
+T: Sat Apr 30 10:35:40 2022 M: Log file closed
+T: Sat Apr 30 10:35:56 2022 M: Log file opened
+T: Sat Apr 30 10:35:56 2022 M: Test 3 - BER = 10.000000
+T: Sat Apr 30 10:35:56 2022 M: Log file closed

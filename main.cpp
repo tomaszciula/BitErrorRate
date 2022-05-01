@@ -20,46 +20,122 @@ int main(int argc, char *argv[])
         std::cout << "argv[" << iter << "] =" << argv[iter] << std::endl;
     }
 
-    std::cout << (int)hammingDistance(0xFF, 0xFF) << std::endl;
+    // TODO: Test 1
     createFile1("test1_file1.bin", 100, 0x55);
     createFile1("test1_file2.bin", 100, 0x55);
 
-    // TODO: Test 1
+    // TODO: Test 2
+    createFile1("test2_file1.bin", 100, 0x55);
+    createFile1("test2_file2.bin", 100, 0x55);
+
+    // TODO: Test 3
+    createFile1("test3_file1.bin", 400000000, 0x55);
+    createFile1("test3_file2.bin", 400000000, 0x50);
 
     char buffer1[100], buffer2[100];
-    int count = 0;
-    std::ifstream test1_file1("test1_file1.bin", std::ios::in | std::ios::binary);
-    test1_file1.read(buffer1, 100);
-    if (!test1_file1)
+    float count = 0.0;
+    std::string s = argv[1];
+    int pos = s.find("_");
+    std::cout << "substring: " << s.substr(0, pos) << std::endl;
+
+    if (s.substr(0, pos) == "test1")
     {
+        std::ifstream test_file1("test1_file1.bin", std::ios::in | std::ios::binary);
+        test_file1.read(buffer1, 100);
+        if (!test_file1)
+        {
+            openLog("log.txt");
+            saveLog("Test 1 plik 1 błąd otwarcia pliku");
+            closeLog();
+        }
+        test_file1.close();
+        std::ifstream test_file2("test1_file2.bin", std::ios::in | std::ios::binary);
+        test_file2.read(buffer2, 100);
+        if (!test_file2)
+        {
+            openLog("log.txt");
+            saveLog("Test 1 plik 2 błąd otwarcia pliku");
+            closeLog();
+        }
+        test_file2.close();
+        for (size_t i = 0; i < 100; i++)
+        {
+            count += hammingDistance(buffer1[i], buffer2[i]);
+        }
+        std::string test1 = "Test 1 - BER = " + std::to_string(count / static_cast<float>(100 * 8));
         openLog("log.txt");
-        saveLog("Test 1 plik 1 błąd otwarcia pliku");
+        saveLog(test1);
         closeLog();
     }
-    std::ifstream test1_file2("test1_file2.bin", std::ios::in | std::ios::binary);
-    test1_file2.read(buffer2, 100);
-    if (!test1_file2)
+
+    else if (s.substr(0, pos) == "test2")
+
     {
+        std::ifstream test_file1("test2_file1.bin", std::ios::in | std::ios::binary);
+        test_file1.read(buffer1, 100);
+        if (!test_file1)
+        {
+            openLog("log.txt");
+            saveLog("Test 2 plik 1 błąd otwarcia pliku");
+            closeLog();
+        }
+        test_file1.close();
+        std::ifstream test_file2("test2_file2.bin", std::ios::in | std::ios::binary);
+        test_file2.read(buffer2, 100);
+        if (!test_file2)
+        {
+            openLog("log.txt");
+            saveLog("Test 2 plik 2 błąd otwarcia pliku");
+            closeLog();
+        }
+        test_file2.close();
+        // Changing 10 bits
+        for (size_t i = 50; i < 55; i++)
+        {
+            buffer2[i] = 0x77;
+        }
+        for (size_t i = 0; i < 100; i++)
+        {
+            count += hammingDistance(buffer1[i], buffer2[i]);
+        }
+        std::string test1 = "Test 2 - BER = " + std::to_string(count / static_cast<float>(100 * 8));
         openLog("log.txt");
-        saveLog("Test 1 plik 2 błąd otwarcia pliku");
+        saveLog(test1);
         closeLog();
     }
-    for (size_t i = 0; i < 100; i++)
+
+    else
+
     {
-        count += hammingDistance(buffer1[i], buffer2[i]);
+        char test3_buffer1[400000000], test3_buffer2[4000000];
+        std::ifstream test_file1("test3_file1.bin", std::ios::in | std::ios::binary);
+        test_file1.read(test3_buffer1, 4000);
+        if (!test_file1)
+        {
+            openLog("log.txt");
+            saveLog("Test 3 plik 1 błąd otwarcia pliku");
+            closeLog();
+        }
+        test_file1.close();
+        std::ifstream test_file2("test3_file2.bin", std::ios::in | std::ios::binary);
+        test_file2.read(test3_buffer2, 40000);
+        if (!test_file2)
+        {
+            openLog("log.txt");
+            saveLog("Test 3 plik 2 błąd otwarcia pliku");
+            closeLog();
+        }
+        test_file2.close();
+        for (size_t i = 0; i < 4000; i++)
+        {
+            count += hammingDistance(test3_buffer1[i], test3_buffer2[i]);
+        }
+        std::string test1 = "Test 3 - BER = " + std::to_string(count / static_cast<float>(100 * 8));
+        openLog("log.txt");
+        saveLog(test1);
+        closeLog();
     }
-    std::string test1 = "Test 1 - BER = " + std::to_string(count);
-    openLog("log.txt");
-    saveLog(test1);
-    closeLog();
-
-    //TODO: Test 2
-
-    createFile1("test2_file1.bin", 100, 0x55);
-    createFile1("test2_file2.bin", 100, 0x50);
-    return 0;
 }
-
 uint8_t hammingDistance(uint8_t n1, uint8_t n2)
 {
     uint8_t x = n1 ^ n2; // XOR
